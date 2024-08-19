@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: link to an external CSS file -->
+    <title>Simple Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,73 +14,80 @@
         header {
             background: #35424a;
             color: #ffffff;
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
         }
         nav {
             margin: 20px 0;
         }
         nav a {
+            margin: 0 15px;
             color: #ffffff;
             text-decoration: none;
-            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            max-width: 800px;
+            margin: 20px auto;
             padding: 20px;
-        }
-        .content {
             background: #ffffff;
-            padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             background: #35424a;
             color: #ffffff;
-            position: relative;
+            position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            color: #ffffff;
+            background: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .button:hover {
+            background: #218838;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Homepage</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <div class="container">
-        <section id="about" class="content">
-            <h2>About Me</h2>
-            <p>Hello! I'm [Your Name], and this is my homepage. Here you'll find information about me and my work.</p>
-        </section>
+<header>
+    <h1>Welcome to My Homepage</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-        <section id="services" class="content">
-            <h2>My Services</h2>
-            <ul>
-                <li>Web Development</li>
-                <li>Graphic Design</li>
-                <li>SEO Optimization</li>
-            </ul>
-        </section>
+<div class="container">
+    <h2>About This Page</h2>
+    <p>This is a simple homepage created using HTML, CSS, and JavaScript in a single file.</p>
+    <p>Feel free to customize it as you like!</p>
+    <button class="button" onclick="showAlert()">Click Me!</button>
+</div>
 
-        <section id="contact" class="content">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, please reach out via email at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
-        </section>
-    </div>
+<footer>
+    <p>&copy; 2023 My Homepage</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2023 My Homepage. All Rights Reserved.</p>
-    </footer>
+<script>
+    function showAlert() {
+        alert("Hello! Welcome to my homepage!");
+    }
+</script>
+
 </body>
 </html>
