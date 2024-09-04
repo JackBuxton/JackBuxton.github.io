@@ -5,6 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Homepage</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: #e9ecef;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,14 +66,11 @@
 
 <div class="hero">
     <h2>Your one-stop solution for web development</h2>
-    
-    <!-- Clickable Heading that links to About Page -->
     <h1 style="cursor: pointer;">
         <a href="about.html" style="text-decoration: none; color: #0056b3;">
             Click Here to Learn More About Me
         </a>
     </h1>
-    
     <button onclick="location.href='about.html'">Learn More</button>
 </div>
 
