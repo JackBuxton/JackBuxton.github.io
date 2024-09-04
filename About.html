@@ -3,55 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>About Me | My Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Homepage</h1>
+    <h1>About Me</h1>
     <nav>
         <ul>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<div class="hero">
-    <h2>Your one-stop solution for web development</h2>
-    
-    <!-- Clickable Heading that links to About Page -->
-    <h1 style="cursor: pointer;">
-        <a href="about.html" style="text-decoration: none; color: #0056b3;">
-            Click Here to Learn More About Me
-        </a>
-    </h1>
-    
-    <button onclick="location.href='about.html'">Learn More</button>
-</div>
-
 <main>
-    <section id="services">
-        <h2>My Services</h2>
-        <p>Here are some of the services I offer:</p>
-        <ul>
-            <li>Web Development</li>
-            <li>Web Design</li>
-            <li>SEO Optimization</li>
-            <li>Content Writing</li>
-        </ul>
-    </section>
+    <section id="about-me">
+        <h2>Who I Am</h2>
+        <p>Hello! I'm [Your Name], a passionate web developer with a flair for design and a commitment to excellence. I have experience in various technologies and love turning ideas into reality.</p>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you would like to get in touch, please email me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+        <h2>My Journey</h2>
+        <p>From a young age, I was fascinated by computers and technology. This passion grew as I ventured into the world of web development, leading me to create unique and engaging websites for clients.</p>
+
+        <h2>Mission</h2>
+        <p>My mission is to provide high-quality web solutions that help businesses succeed online. I believe in continuous learning and staying updated with the latest trends in technology.</p>
+
+        <h2>Fun Facts</h2>
+        <ul>
+            <li>I love hiking and exploring nature.</li>
+            <li>In my spare time, I enjoy photography.</li>
+            <li>I have a collection of vintage cameras.</li>
+        </ul>
     </section>
 </main>
 
 <footer>
-    <p>&copy; 2023 My Homepage. All rights reserved.</p>
+    <p>© 2023 My Homepage. All rights reserved.</p>
 </footer>
 
 </body>
