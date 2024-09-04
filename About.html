@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | My Homepage</title>
+    <title>Business Name | About Us</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
         header {
             background: #0056b3;
@@ -30,13 +28,16 @@
             color: white;
             text-decoration: none;
         }
+        .hero {
+            background: #e9ecef;
+            padding: 50px 20px;
+            text-align: center;
+        }
         main {
             padding: 20px;
-            background: white;
-            max-width: 800px;
-            margin: 20px auto;
-            border-radius: 5px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin: 20px 0;
         }
         footer {
             background: #0056b3;
@@ -52,38 +53,62 @@
 <body>
 
 <header>
-    <h1>About Me</h1>
+    <h1>Business Name</h1>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
+<div class="hero">
+    <h2>Your Trusted Business Partner</h2>
+    <p>Delivering exceptional services to meet your needs.</p>
+    <a href="#contact">Get in Touch</a>
+</div>
+
 <main>
-    <section id="about-me">
-        <h2>Who I Am</h2>
-        <p>Hello! I'm [Your Name], a passionate web developer with a flair for design and a commitment to excellence. I have experience in various technologies and love turning ideas into reality.</p>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Business Name, we are committed to providing quality services tailored to our clients' needs. Our experienced team is dedicated to making your business thrive.</p>
+    </section>
 
-        <h2>My Journey</h2>
-        <p>From a young age, I was fascinated by computers and technology. This passion grew as I ventured into the world of web development, leading me to create unique and engaging websites for clients.</p>
-
-        <h2>Mission</h2>
-        <p>My mission is to provide high-quality web solutions that help businesses succeed online. I believe in continuous learning and staying updated with the latest trends in technology.</p>
-
-        <h2>Fun Facts</h2>
+    <section id="services">
+        <h2>Our Services</h2>
         <ul>
-            <li>I love hiking and exploring nature.</li>
-            <li>In my spare time, I enjoy photography.</li>
-            <li>I have a collection of vintage cameras.</li>
+            <li>Consulting</li>
+            <li>Project Management</li>
+            <li>Design and Development</li>
+            <li>Marketing Strategies</li>
         </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"Business Name transformed our operations and helped us grow our revenue!"</p>
+            <cite>- Happy Client</cite>
+        </blockquote>
+        <blockquote>
+            <p>"The team's expertise and dedication were invaluable for our project."</p>
+            <cite>- Satisfied Customer</cite>
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any inquiries or would like to work with us, please reach out!</p>
+        <p>Email: <a href="mailto:info@businessname.com">info@businessname.com</a></p>
+        <p>Phone: (123) 456-7890</p>
     </section>
 </main>
 
 <footer>
-    <p>© 2023 My Homepage. All rights reserved.</p>
+    <p>© 2023 Business Name. All rights reserved.</p>
 </footer>
 
 </body>
