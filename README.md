@@ -1,3 +1,115 @@
 # JackBuxton.github.io
 about this website
 this website is about me
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: #e9ecef;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Homepage</h1>
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#buy-items">Buy Items</a></li> <!-- Link to Buy Items section -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Your one-stop solution for web development</h2>
+    <h1 style="cursor: pointer;">
+        <a href="about.html" style="text-decoration: none; color: #0056b3;">
+            Click Here to Learn More About Me
+        </a>
+    </h1>
+    <button onclick="location.href='about.html'">Learn More</button>
+</div>
+
+<main>
+    <section id="services">
+        <h2>My Services</h2>
+        <p>Here are some of the services I offer:</p>
+        <ul>
+            <li>Web Development</li>
+            <li>Web Design</li>
+            <li>SEO Optimization</li>
+            <li>Content Writing</li>
+        </ul>
+    </section>
+
+    <section id="buy-items">
+        <h2>Buy Items</h2>
+        <p>Explore our collection of exclusive items available for purchase:</p>
+        <ul>
+            <li><strong>Item 1:</strong> Description - $19.99 <button>Add to Cart</button></li>
+            <li><strong>Item 2:</strong> Description - $29.99 <button>Add to Cart</button></li>
+            <li><strong>Item 3:</strong> Description - $39.99 <button>Add to Cart</button></li>
+            <li><strong>Item 4:</strong> Description - $49.99 <button>Add to Cart</button></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, please email me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2023 My Homepage. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
