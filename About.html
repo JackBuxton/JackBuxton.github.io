@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,6 +29,11 @@
             color: white;
             text-decoration: none;
         }
+        .hero {
+            background: #e9ecef;
+            padding: 50px 20px;
+            text-align: center;
+        }
         main {
             padding: 20px;
         }
@@ -48,30 +54,47 @@
 <body>
 
 <header>
-    <h1>About Me</h1>
+    <h1>Welcome to My Homepage</h1>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li> <!-- Link back to homepage -->
-            <li><a href="#about">About Us</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#buy-items">Buy Items</a></li> <!-- Link to Buy Items section -->
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
-    <section id="about">
-        <h2>Who Am I?</h2>
-        <p>Hello! I'm [Your Name], a web developer with a passion for creating beautiful and functional websites. I enjoy working on projects that challenge me and allow me to express my creativity.</p>
-    </section>
+<div class="hero">
+    <h2>Your one-stop solution for web development</h2>
+    <h1 style="cursor: pointer;">
+        <a href="about.html" style="text-decoration: none; color: #0056b3;">
+            Click Here to Learn More About Me
+        </a>
+    </h1>
+    <button onclick="location.href='about.html'">Learn More</button>
+</div>
 
+<main>
     <section id="services">
         <h2>My Services</h2>
+        <p>Here are some of the services I offer:</p>
         <ul>
             <li>Web Development</li>
+            <li>Web Design</li>
             <li>SEO Optimization</li>
-            <li>E-commerce Solutions</li>
-            <li>Consulting</li>
+            <li>Content Writing</li>
+        </ul>
+    </section>
+
+    <section id="buy-items">
+        <h2>Buy Items</h2>
+        <p>Explore our collection of exclusive items available for purchase:</p>
+        <ul>
+            <li><strong>Item 1:</strong> Description - $19.99 <button>Add to Cart</button></li>
+            <li><strong>Item 2:</strong> Description - $29.99 <button>Add to Cart</button></li>
+            <li><strong>Item 3:</strong> Description - $39.99 <button>Add to Cart</button></li>
+            <li><strong>Item 4:</strong> Description - $49.99 <button>Add to Cart</button></li>
         </ul>
     </section>
 
@@ -82,7 +105,7 @@
 </main>
 
 <footer>
-    <p>© 2023 About Me. All rights reserved.</p>
+    <p>© 2023 My Homepage. All rights reserved.</p>
 </footer>
 
 </body>
