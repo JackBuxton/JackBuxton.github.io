@@ -48,22 +48,19 @@
             bottom: 0;
             width: 100%;
         }
-        .hero a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #0056b3;
+        .cta-button {
+            background-color: #007bff;
             color: white;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
         }
-        .hero a:hover {
-            background: #003d80;
+        .cta-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-
     <!-- Header Section -->
     <header>
         <h1>Business Name</h1>
@@ -73,7 +70,7 @@
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="buy-items.html">Buy Items</a></li> <!-- Link to Buy Items Page -->
+                <li><a href="buy-items.html">Buy Items</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -83,7 +80,7 @@
     <div class="hero">
         <h2>Your Trusted Business Partner</h2>
         <p>Delivering exceptional services to meet your needs.</p>
-        <a href="#contact">Get in Touch</a>
+        <a href="#contact" class="cta-button">Get in Touch</a>
     </div>
 
     <!-- Main Content Section -->
@@ -128,17 +125,15 @@
         <p>&copy; 2023 Business Name. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript to Scroll Smoothly -->
+    <!-- JavaScript to enhance interaction -->
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        document.addEventListener("DOMContentLoaded", function() {
+            const contactLink = document.querySelector('a[href="#contact"]');
+            contactLink.addEventListener("click", function(event) {
+                alert("Thank you for your interest! We will contact you shortly.");
             });
         });
     </script>
 </body>
 </html>
+
